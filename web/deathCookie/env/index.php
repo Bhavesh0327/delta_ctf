@@ -1,0 +1,11 @@
+<?php
+  session_start();
+  if(isset($_SESSION["username"])){
+    header("Location:./archive.php?success=welcome");
+    exit();
+  }
+  else{
+    header("Location:./login.php");
+    exit();
+  }
+?>

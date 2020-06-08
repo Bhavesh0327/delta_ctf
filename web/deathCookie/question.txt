@@ -1,0 +1,4 @@
+Dr.Ayush has found a vaccine which can cure SARS but he died before 
+publishing his results in his laboratory eating a cookie which had live virus strains. Can you find the records 
+from his lab archives?
+(hint: strcmp(username, Ayush) == 0 )

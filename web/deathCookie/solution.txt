@@ -1,0 +1,2 @@
+strcmp() vulnerability in password field.
+flag can be found in cookie (URL encoded)

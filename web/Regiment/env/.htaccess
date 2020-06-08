@@ -1,0 +1,1 @@
+RewriteRule ^flag.html/(.*)$ /$1 [L,R=301,QSA]
