@@ -1,0 +1,18 @@
+An investigator recieved a weird message from one of his main witness just before he died, sadly the investigtor being good at solving puzzles and crimes he can't figure out the cryptic message which the witness has sent. But there is a catch when witness figured out he was in risk of being dead in a hurry he sent the key and iv in https but the cipher he send through http. Help the investigator find the cryptic message, could be a major break trough in the Investigation.
+
+this was the https message
+```
+    Using AES-CBC
+
+    key : dGhpcyBpcyBhIHNlY3JldCBub3QgdG8gcmV2ZWFsZWQ=
+    iv  : AQIDBAUGBwgJCgsMDQ4PEA==
+```
+
+clue : the witness usually sends the text with some encoding, hope you can figure that out!
+
+this was the http message
+```
+    cipher : e8a5010a799c0e132c8f1e6810d7cfaea1f59bef90c158ba36ae0b340d06406486df83970097edec1a7acb19d62bd9b8130a47148626c947e2e59d797bd81dee
+```
+
+Find the flag of format dctf{}.
