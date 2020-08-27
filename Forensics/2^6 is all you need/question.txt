@@ -1,0 +1,3 @@
+Ram and Deeraj playing a small game, where Derraj has a secret flag for Ram. As he is good with networks, Deeraj decides to use some trick to hide the flag inside a pcap file. Deeraj knows Ram is a huge fan of deadpool. Help Ram to find out the correct flag.
+
+The flag follow the standard format.
