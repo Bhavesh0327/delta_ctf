@@ -1,0 +1,3 @@
+You recently participated in a CTF Contest, and as a goodie, you have gotten a little recording device.
+However, this seems like a strange choice of item to give, and you're certain there's more to this device.
+Can you find what secrets this device is hiding?
