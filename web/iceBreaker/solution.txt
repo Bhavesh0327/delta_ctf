@@ -1,0 +1,3 @@
+Inspect index.html, you`ll find flag.html. 
+Checkout linked JS files. It would look irrelevant at first glance,
+but de-obfuscate the code, flag can be found in it.
