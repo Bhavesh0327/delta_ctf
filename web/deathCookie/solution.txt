@@ -1,2 +1,3 @@
-strcmp() vulnerability in password field.
+Try out different php vulnerabilities in string verification. 
+->strcmp() vulnerability in password field.
 flag can be found in cookie (URL encoded)
