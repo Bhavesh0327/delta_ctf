@@ -1,5 +1,7 @@
 FROM ubuntu
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update
 RUN useradd seeker -m -s /bin/bash
 RUN echo seeker:password | chpasswd
@@ -28,5 +30,5 @@ RUN echo "alias ls='fortune -s | cowsay -f stegosaurus'" >> .bashrc
 
 COPY QR.png Downloads/.flag.png
 
-USER seeker
+RUN apt-get install -y ssh
 ENTRYPOINT /bin/bash

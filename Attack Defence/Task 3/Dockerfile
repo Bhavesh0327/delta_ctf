@@ -28,7 +28,14 @@ RUN echo "alias mv='fortune -s | cowsay -f stegosaurus'" >> .bashrc
 RUN echo "alias cd='fortune -s | cowsay -f stegosaurus'" >> .bashrc
 RUN echo "alias ls='fortune -s | cowsay -f stegosaurus'" >> .bashrc
 
-COPY QR.png /etc/apt/sources.list.d/flag.png
+COPY scatter.sh scatter.sh
+COPY Fake.png Fake.png
+COPY QR.png QR.png
+RUN chmod +x scatter.sh
+RUN ./scatter.sh
+RUN rm scatter.sh
+RUN rm Fake.png
+RUN rm QR.png
 
 RUN apt-get install -y ssh
 ENTRYPOINT /bin/bash
