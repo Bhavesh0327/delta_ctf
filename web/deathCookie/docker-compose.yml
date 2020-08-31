@@ -1,0 +1,26 @@
+version: '3'
+services:
+  db:
+    image: mysql
+    restart: always
+    container_name: mysql_db
+    environment:
+      MYSQL_DATABASE: web
+      MYSQL_ROOT_PASSWORD: 123root123
+    volumes:
+      - ./sql/scripts:/docker-entrypoint-initdb.d
+      - ./sql/config:/etc/mysql/conf.d
+      - ./sql/data:/var/lib/mysql
+    ports:
+      - "8000:3306"
+
+  server:
+    build: ./env
+    restart: always
+    container_name: apache_server
+    ports:
+      - "12001:80"
+    depends_on:
+      - db
+    volumes:
+      - ./env:/var/www/html
